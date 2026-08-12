@@ -1,0 +1,9 @@
+[project]
+name = "rflx-customer-portal"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "python-dotenv>=1.2.2",
+    "reflex>=0.9.8",
+    "reflex-clerk-api>=1.3.1",
+]

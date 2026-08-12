@@ -1,0 +1,107 @@
+───────────────────────────── Starting Reflex App ──────────────────────────────
+Compiling: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 18/17 0:00:00
+Creating Production Build:  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 4/4 0:00:03
+───────────────────────────────── App Running ──────────────────────────────────
+App running at: http://0.0.0.0:3000/
+[ERROR] Application callable raised an exception
+Traceback (most recent call last):
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/granian/_futures.py", line 15, in future_watcher
+    await inner(watcher.scope, watcher.proto)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 448, in handle
+    await self.app(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/reflex/app.py", line 707, in context_middleware
+    await app(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 448, in handle
+    await self.app(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/staticfiles.py", line 94, in __call__
+    await self.check_config()
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/staticfiles.py", line 201, in check_config
+    raise RuntimeError(f"StaticFiles directory '{self.directory}' does not exist.")
+RuntimeError: StaticFiles directory '/home/inistack/Dev/REFLEX/rflx_customer_portal/.web/build/client' does not exist.
+[ERROR] Application callable raised an exception
+Traceback (most recent call last):
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/granian/_futures.py", line 15, in future_watcher
+    await inner(watcher.scope, watcher.proto)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 448, in handle
+    await self.app(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/reflex/app.py", line 707, in context_middleware
+    await app(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/routing.py", line 448, in handle
+    await self.app(scope, receive, send)
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/staticfiles.py", line 94, in __call__
+    await self.check_config()
+  File "/home/inistack/Dev/REFLEX/rflx_customer_portal/.venv/lib/python3.14/site-packages/starlette/staticfiles.py", line 201, in check_config
+    raise RuntimeError(f"StaticFiles directory '{self.directory}' does not exist.")
+RuntimeError: StaticFiles directory '/home/inistack/Dev/REFLEX/rflx_customer_portal/.web/build/client' does not exist.
